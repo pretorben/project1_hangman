@@ -1,0 +1,77 @@
+body{
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #A3A3A3;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header{
+  /*background-image: url('bg-img.jpg');*/
+  background-position: center;
+  background-size: contain;
+}
+
+h1, h3{
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  font-size: 3em;
+}
+
+header>p{
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 50%;
+  line-height: 1.5;
+  letter-spacing: 1.5;
+  padding-top: 1%;
+}
+
+#top-line{
+  margin-top: 1%;
+  text-align: center;
+}
+
+#italic{
+  font-style: italic;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2%;
+}
+
+.guess-word{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  border: 3px solid black;
+  margin-right: 2.5%;
+}
+.noose{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  border: 3px solid black;
+  margin-left: 2.5%;
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
