@@ -6,5 +6,5 @@ pullWord.onload = function(){
   var randomLine = wordListLines[getLine];
   console.log(randomLine);
 };
-pullWord.open('GET', 'https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears-medium.txt', true);
+pullWord.open('GET', 'https://github.com/pretorben/project1_hangman/blob/gh-pages/word-list.txt', true);
 pullWord.send();
