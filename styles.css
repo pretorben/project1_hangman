@@ -5,12 +5,9 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-header{
-  /*background-image: url('bg-img.jpg');*/
-  background-position: center;
-  background-size: contain;
+  justify-content: center;
+  align-content: center;
+  user-select: none;
 }
 
 h1, h3{
@@ -42,36 +39,68 @@ header>p{
   font-style: italic;
 }
 
+.input-box{
+  margin-top: 3%;
+}
+
+#input-letter{
+  width: 175px;
+  height: 25px;
+  border: 1px solid black;
+  color: black;
+  font-size: 18px;
+}
+
+#submit-button{
+  width: 125px;
+  height: 27px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
 main{
+  margin-left: 16%;
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 2%;
+  background-image: url(img/noose.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 950px;
+  height: 600px;
 }
 
 .guess-word{
-  height: 300px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  width: 400px;
-  border: 3px solid black;
-  margin-right: 2.5%;
+  margin-right: 30%;
+  margin-top: 10%;
 }
+
+.guesses{
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5;
+  text-align: center;
+}
+
 .noose{
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 400px;
-  border: 3px solid black;
   margin-left: 2.5%;
 }
 
 footer{
-  bottom: 0;
-  position: fixed;
-  width: 100%;
+  margin-top: 5%;
 }

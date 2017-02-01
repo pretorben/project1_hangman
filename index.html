@@ -14,14 +14,20 @@
       <p>Guess a letter.  If the letter is in the word, it'll be shown in the blanks.  If you think you know the word, you can guess it at any time.  For each wrong guess, a body part will be added to the gallows.  You have five guesses- one for the head, neck, arms, torso, and legs.  And remember- if you lose, don't get too <span id='italic'>hung</span> up on it!  Good luck!</p>
     </header>
 
+    <section class='input-box'>
+      <input type="text" id="input-letter" placeholder="Enter guess here"></input><br>
+      <button type="button" id='submit-button' name="Submit">Submit</button>
+    </section>
+
     <main>
-      <div class="guess-word">test</div>
-      <div class="noose">test2</div>
+      <div class="guess-word"></div>
+      <div class="guesses"></div>
+      <div class="noose"></div>
     </main>
 
     <footer>
       <h3>About the Designer</h3>
-      <p>Ben Shapiro is a WDI-15 student.  He has many leather-bound books and his condo smells of rich mohagany.  You can contact him via <a href='mailto:shapiro_benjamin@bah.com'>email</a>.</p>
+      <p>Ben Shapiro is a WDI-14 student.  He has many leather-bound books and his condo smells of rich mohagany.  You can contact him via <a href='mailto:shapiro_benjamin@bah.com'>email</a>.</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
