@@ -107,7 +107,7 @@ function wrongGuess(guess){
   $('main').css('background-image','url(' + imageArray[numWrongGuesses] + ')');
   if (numWrongGuesses>=5){
     var word = wordArray.join('');
-    setTimeout(function(){ alert('Sorry, you lose.  Your word was: ' + word);}, 500);
+    alert('Sorry, you lose.  Your word was: ' + word);
     askPlayAgain();
   }
   else{
