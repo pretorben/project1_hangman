@@ -82,7 +82,7 @@ function revealLetters(guess){
 function didUserWin(guess){
   var compareArray = wordArray;
   alreadyGuessed.push(guess);
-  $('.guesses').html(alreadyGuessed);
+  $('.guesses').html("Guessed: " + alreadyGuessed);
   var inWord = 0;
   var uniqueLetters = $.uniqueSort(compareArray);
   for(i=0;i<alreadyGuessed.length;i++){
