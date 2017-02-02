@@ -1,0 +1,39 @@
+Creating the Blanks
+  Pull random line from word list
+    Pull text file with request
+    Read file and select random line
+    Save line as string
+    Iterate string to array
+  Make blanks from array length
+    Setup for loop based on array length
+    Create CSS class/Id for blank
+    For each loop iteration, create one blank
+
+Hangman's Noose
+  Create box
+  Create pole
+  Create top bar
+  Create rope pole
+  Create rope
+
+Guesses
+  Prompt user for input or word guess (letters only, give invalid input alert for non-letter input)
+    If word guess, compare to word string
+      If word guess is correct, user wins
+      If word guess is wrong, add body part to noose
+    Scan array for match
+      If a match exists:
+        Reveal blank(s)
+        Delete instances from array (i.e. guess 'o' for 'moose' = delete both 'o' in array)
+        Add guessed letter to guess array (displayed for user)
+      If no match:
+        Add guessed letter to guess array
+        Add body part (head, face, neck, arms, midsection, legs) to noose
+          If legs are added, game ends
+    If word is guessed:
+      Congrats, ask to play again
+    If legs aren't added and word not guessed:
+      Prompt user for input again (include guessed letter array)
+        If guess is in guessed letter array:
+          Alert that letter has been guessed, try again
+          Prompt for new guess
